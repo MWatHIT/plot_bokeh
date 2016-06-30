@@ -11,10 +11,10 @@ y1 = [100,100,90]
 y2 = [110,110,100]
 
 
-output_file("log.html")
+output_file("ce101_6.html")
 
 # create a new plot with a log axis type
-p = figure(plot_width=400, plot_height=400,
+p = figure(plot_width=500, plot_height=300,
            x_axis_type="log",y_range=(60,120),
            x_range=(10,10000))
 
@@ -26,7 +26,7 @@ p.xaxis.ticker=FixedTicker(ticks=[10,25,100,1000,10000])
 
 
 p.text
-p.title = "限值图例子"
+p.title = "空间系统"
 p.xaxis.axis_label = '频率（Hz）'
 p.yaxis.axis_label = '限值（dBμA）'
 #p.circle(x1, y1, fill_color="white", size=8)
