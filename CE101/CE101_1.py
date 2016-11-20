@@ -1,5 +1,11 @@
 #!/usr/bin/python
 #coding:utf-8
+
+# 解决title不能是中文的临时方案
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 from numpy import arange
 from bokeh.plotting import figure, output_file, show
 from bokeh.models import FixedTicker
@@ -10,7 +16,7 @@ y = [95,95,76]
 
 
 
-output_file("ce101_1.html")
+output_file("ce101_1.html", title = "潜艇-DC")
 
 # create a new plot with a log axis type
 p = figure(plot_width=400, plot_height=300,

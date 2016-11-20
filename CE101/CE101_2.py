@@ -10,7 +10,7 @@ y = [120,74]
 
 
 
-output_file("ce101_2.html")
+output_file("ce101_2.html",title = "水面舰船-50Hz-P<1kVA")
 
 # create a new plot with a log axis type
 p = figure(plot_width=400, plot_height=300,

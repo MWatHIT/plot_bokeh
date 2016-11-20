@@ -6,7 +6,7 @@ from numpy import arange
 
 x = arange(0,36,1)
 y = [0,0.5,4.8,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,4.8,0.5,0]
-output_file("fangbo.html")
+output_file("fangbo.html",mode='inline')
 
 
 p = figure(plot_width=400, plot_height=400)
